@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios Tecnológicos Globales | Soluciones Internacionales</title>
+    <meta name="description" content="Servicios tecnológicos profesionales con cobertura internacional. Desarrollo de software, consultoría IT, transformación digital para empresas globales.">
+    <meta name="keywords" content="servicios tecnológicos, soluciones IT globales, consultoría tecnológica, desarrollo de software internacional, transformación digital">
+    <style>
+        :root {
+            --terminal-bg: #0C0C0C;
+            --terminal-text-primary: #00FF00;
+            --terminal-text-secondary: #8AFF80;
+            --terminal-accent: #00FFFF;
+            --terminal-border: #005500;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', monospace;
+        }
+        body {
+            background-color: var(--terminal-bg);
+            color: var(--terminal-text-primary);
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 2px solid var(--terminal-border);
+        }
+        .logo {
+            font-size: 24px;
+            color: var(--terminal-accent);
+            font-weight: bold;
+        }
+        nav a {
+            color: var(--terminal-text-secondary);
+            text-decoration: none;
+            margin-left: 15px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: var(--terminal-accent);
+        }
+        .hero {
+            text-align: center;
+            padding: 80px 0;
+            background-color: rgba(0,0,0,0.5);
+            position: relative;
+        }
+        .hero-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("/api/placeholder/1920/800");
+            background-size: cover;
+            background-position: center;
+            opacity: 0.2;
+            z-index: -1;
+        }
+        .hero h1 {
+            color: var(--terminal-accent);
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            color: var(--terminal-text-secondary);
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .btn {
+            padding: 12px 24px;
+            border: 2px solid var(--terminal-text-primary);
+            color: var(--terminal-text-primary);
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .btn:hover {
+            background-color: var(--terminal-text-primary);
+            color: var(--terminal-bg);
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            padding: 50px 0;
+        }
+        .service {
+            border: 1px solid var(--terminal-border);
+            padding: 30px;
+            text-align: center;
+            transition: border-color 0.3s;
+            position: relative;
+        }
+        .service-image {
+            width: 100%;
+            height: 250px;
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 20px;
+            opacity: 0.7;
+        }
+        .service:hover {
+            border-color: var(--terminal-accent);
+        }
+        .service h3 {
+            color: var(--terminal-accent);
+            margin-bottom: 15px;
+        }
+        .global-reach, .technologies, .contact {
+            padding: 50px 0;
+            text-align: center;
+            position: relative;
+        }
+        .section-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            opacity: 0.1;
+            z-index: -1;
+        }
+        .global-reach h2, .technologies h2, .contact h2 {
+            color: var(--terminal-accent);
+            margin-bottom: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid var(--terminal-border);
+            color: var(--terminal-text-secondary);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            > Servicios Tecnológicos
+        </div>
+        <nav>
+            <a href="#servicios">Servicios</a>
+            <a href="#tecnologias">Tecnologías</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div class="hero-image"></div>
+            <h1>Soluciones Tecnológicas Globales</h1>
+            <p>Transformamos desafíos tecnológicos en oportunidades de negocio. Ofrecemos servicios integrales de desarrollo de software, consultoría IT y soluciones digitales adaptadas a cada necesidad empresarial.</p>
+            <div class="cta-buttons">
+                <a href="#servicios" class="btn">Explorar Servicios</a>
+                <a href="#contacto" class="btn">Contactar</a>
+            </div>
+        </section>
+
+        <section id="servicios" class="services">
+            <div class="service">
+                <div class="service-image" style="background-image: url('/api/placeholder/400/250');"></div>
+                <h3>Desarrollo de Software</h3>
+                <p>Creamos aplicaciones personalizadas que impulsan la eficiencia y competitividad de tu empresa.</p>
+            </div>
+            <div class="service">
+                <div class="service-image" style="background-image: url('/api/placeholder/400/250');"></div>
+                <h3>Consultoría IT</h3>
+                <p>Asesoramiento estratégico para optimizar tu infraestructura tecnológica y procesos digitales.</p>
+            </div>
+            <div class="service">
+                <div class="service-image" style="background-image: url('/api/placeholder/400/250');"></div>
+                <h3>Transformación Digital</h3>
+                <p>Implementamos tecnologías emergentes para revolucionar tu modelo de negocio.</p>
+            </div>
+        </section>
+
+        <section id="tecnologias" class="technologies">
+            <div class="section-image" style="background-image: url('/api/placeholder/1920/800');"></div>
+            <h2>Tecnologías que Dominamos</h2>
+            <p>Expertos en desarrollo web, móvil, cloud computing, inteligencia artificial y más.</p>
+        </section>
+
+        <section id="global-reach" class="global-reach">
+            <div class="section-image" style="background-image: url('/api/placeholder/1920/800');"></div>
+            <h2>Alcance Internacional</h2>
+            <p>Servicios tecnológicos que conectan empresas en más de 50 países, con soluciones adaptadas a mercados globales.</p>
+        </section>
+
+        <section id="contacto" class="contact">
+            <div class="section-image" style="background-image: url('/api/placeholder/1920/800');"></div>
+            <h2>Contáctanos</h2>
+            <p>¿Listo para llevar tu tecnología al siguiente nivel?</p>
+            <div class="cta-buttons">
+                <a href="mailto:devlewiso@outlook.com" class="btn">Enviar Correo</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        © 2024 Servicios Tecnológicos Globales. Todos los derechos reservados.
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
